@@ -60,7 +60,6 @@ class Router {
         foreach($sortedMethods as $m) {
             $methodParts = explode("/", $m["path"]);
             $methodPartsCount = count($methodParts);
-            $match = false;
             if($pathPartsCount == $methodPartsCount) {    
                 $arguments = [];
                 $i = $methodPartsCount - 1 - count($m["pathValues"]);
