@@ -1,7 +1,6 @@
 <?php
 include_once 'Request.php';
 include_once 'Router.php';
-include_once '../../inc/dbinfo.inc';
 $router = new Router(new Request($_SERVER));
 
 $router->get('/v2', function() {
