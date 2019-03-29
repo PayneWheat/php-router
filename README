@@ -1,0 +1,7 @@
+PHP Routing Library
+
+See this guide: https://medium.com/the-andela-way/how-to-build-a-basic-server-side-routing-system-in-php-e52e613cf241
+
+Additional functionality: .htaccess Fallback, path parameters, JSON body POST data
+
+Routes are defined in index.php.
