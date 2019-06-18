@@ -8,6 +8,7 @@ I also included a simple example of how to utilize the authorization header in t
 
 ### Update httpd.conf
 Be sure to update the httpd.conf in every environment to allow override so the .htaccess file will work.
+
 `AllowOverride All`
 
 Routes are defined in index.php.
@@ -63,4 +64,6 @@ Set up config.xml for PHP unit; you may need to change the DOCUMENT_ROOT value.
 I used Xdebug for my code coverage reports, but any code coverage report generator that works with PHPUnit and your operating system should work.
 
 To run the tests, navigate to the root directory and run the following command:
-`phpunit --whitelist v2 --stderr --coverage-html report tests`
+
+`phpunit --whitelist api --stderr --coverage-html report tests`
+
