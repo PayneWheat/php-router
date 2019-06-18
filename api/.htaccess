@@ -1,0 +1,2 @@
+DirectoryIndex /api/index.php
+FallbackResource /api/index.php
