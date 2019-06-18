@@ -47,6 +47,7 @@ $router->post('/api/samplepost/', function($request) {
 ```
 
 ### Simple Authorization Example
+Pass the value of `$headers["Authorization"]` to your decoding library of choice. This example simply returns the value of the Authorization header in the HTTP request.
 ```php
 $router->get('/api/sampleauth', function($request) {
     $data = [];
