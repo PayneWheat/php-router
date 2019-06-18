@@ -6,7 +6,12 @@ I extended the codebase above by adding wildcards/path arguments, the ability to
 
 I also included a simple example of how to utilize the authorization header in the HTTP request. In a recent project, I was able to integrate a JWT decoding library to authorize requests.
 
+### Update httpd.conf
+Be sure to update the httpd.conf in every environment to allow override so the .htaccess file will work.
+    AllowOverride All
+
 Routes are defined in index.php.
+
 ### GET HTML
 ```php
 $router->get('/api', function() {
@@ -49,3 +54,13 @@ $router->get('/api/sampleauth', function($request) {
     return json_encode($data);
 });
 ```
+
+### Tests, PHPUnit
+Install PHPUnit
+
+Set up config.xml for PHP unit; you may need to change the DOCUMENT_ROOT value.
+
+I used Xdebug for my code coverage reports, but any code coverage report generator that works with PHPUnit and your operating system should work.
+
+To run the tests, navigate to the root directory and run the following command:
+    phpunit --whitelist v2 --stderr --coverage-html report tests

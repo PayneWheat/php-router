@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit>
+	<php>
+		<server name="DOCUMENT_ROOT" value="/Users/imac/Sites/api/" />
+        <server name="SERVER_NAME" value="localhost" />
+	</php>
+	<testsuites>
+		<testsuite name="My Test Suite">
+			
+			<directory>./</directory>
+	  	</testsuite>
+	</testsuites>
+	
+	<filter>
+		<whitelist>
+	 		<directory suffix=".php">../api/classes</directory>
+		</whitelist>
+	</filter>
+</phpunit>
